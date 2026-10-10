@@ -44,9 +44,59 @@ using System.Runtime.ConstrainedExecution;
 //    }
 //    n += 10;
 //    Console.WriteLine();
+//}2
+//try
+//{
+//    Console.Write("Введите k:");
+//    int k = int.Parse(Console.ReadLine());
+//    double A = 1;
+//    for (int j = 1;j<=k;j++)
+//    {
+//        if (j == 3) continue;
+//        double s = 0;
+//        for(int i = j; i<=k+1;i++)
+//        {
+//            if (i == 1) continue;
+//            s += Math.Pow(i - 5, 1 / 3.0) / (i - 1);
+//        }
+//        A *= ((j - 4) * j / (j - 3)) * s;
+//    }
+//    Console.WriteLine($"s={A:F2}");
+//}
+//catch(Exception e)
+//{
+//    Console.WriteLine(e.Message);
+//}
+//3.3
+//try
+//{
+//    Console.Write("Введите n:");
+//    int n = int.Parse(Console.ReadLine());
+//    Console.Write("Введите x:");
+//    int x = int.Parse(Console.ReadLine());
+//    double s = 0;
+//    for(int i = 1; i< n; i++)
+//    {
+//        s += Math.Sin((2 * i - 1) * Math.Pow(x, 2 * i - 1));
+//    }
+//    Console.WriteLine($"s={s:f2}");
+//}
+//catch(Exception e)
+//{
+//    Console.WriteLine(e.Message);
 //}
 
-//вариант 10 базовый
+//3.4 low
+//Console.WriteLine("|    x   |   y    |");
+//Console.WriteLine("--------------------");
+//for (double x = 1.1;x<=3.1;x+=0.2) 
+//{
+//    double y = 3 * x - 2 * Math.Log(x) - 5;
+//    Console.WriteLine($"|   {x:f1}   |   {y:f2}   |");
+//}
+//Console.WriteLine("--------------------");
+
+//вариант 10 базовый 3.1
 Console.Write("Введите m: ");
 int m = int.Parse(Console.ReadLine());
 
@@ -61,3 +111,5 @@ for (int i = m; i <= n; i++)
 }
 
 Console.WriteLine($"Сумма квадратов чисел от {m} до {n}: {sum}");
+
+
