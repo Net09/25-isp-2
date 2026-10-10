@@ -200,34 +200,34 @@ using System.Text.RegularExpressions;
 //вариант 2 базовый
 
 
-try
-{
-    Console.Write("Введите a: ");
-    double a = double.Parse(Console.ReadLine());
-    Console.Write("Введите b: ");
-    double b = double.Parse(Console.ReadLine());
-    Console.Write("Введите c: ");
-    double c = double.Parse(Console.ReadLine());
-    int k = 0;
-    if ((a >= b && a <= c) || (a <= b && a >= c)) k = 1;
-    if ((b >= a && b <= c) || (b <= a && b >= c)) k = 2;
-    if ((c >= a && c <= b) || (c <= a && c >= b)) k = 3;
-    switch (k)
-    {
-        case 1:
-            Console.WriteLine(a);
-            break;
-        case 2:
-            Console.WriteLine(b);
-            break;
-        case 3:
-            Console.WriteLine(c);
-            break;
-        default: break;
-    }
+//try
+//{
+//    Console.Write("Введите a: ");
+//    double a = double.Parse(Console.ReadLine());
+//    Console.Write("Введите b: ");
+//    double b = double.Parse(Console.ReadLine());
+//    Console.Write("Введите c: ");
+//    double c = double.Parse(Console.ReadLine());
+//    int k = 0;
+//    if ((a >= b && a <= c) || (a <= b && a >= c)) k = 1;
+//    if ((b >= a && b <= c) || (b <= a && b >= c)) k = 2;
+//    if ((c >= a && c <= b) || (c <= a && c >= b)) k = 3;
+//    switch (k)
+//    {
+//        case 1:
+//            Console.WriteLine(a);
+//            break;
+//        case 2:
+//            Console.WriteLine(b);
+//            break;
+//        case 3:
+//            Console.WriteLine(c);
+//            break;
+//        default: break;
+//    }
 
-}
-catch (Exception e)
-{
-    Console.WriteLine(e.Message);
-}
+//}
+//catch (Exception e)
+//{
+//    Console.WriteLine(e.Message);
+//}
